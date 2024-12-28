@@ -170,7 +170,7 @@ function util.boxcol(x,y,sx,sy,mx,my)
     return false
 end
 
--- DISABLED: UseNo I knintverparse
+-- DISABLED: Use intverparse
 -- Parses version string to table.
 -- Only supports 3, fully-integer coloums
 -- For example: 1.5.23 => {"1", "5", "23"}
