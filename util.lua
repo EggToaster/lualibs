@@ -123,6 +123,17 @@ function table.hasleftinright(t,u)
     return false
 end
 
+-- If one element in left matches right, returns true.
+-- {"delete". "remove"} in left, command in right, for example
+function table.leftisright(t, v)
+    for _, w in pairs(t) do
+        if v == w then
+            return true
+        end
+    end
+    return false
+end
+
 -- Properly clones tree(table) in first argument, and returns it.
 -- In another words, ProperTree!
 -- Normally, if you use new = oldtable, it will clone table ID as well.
